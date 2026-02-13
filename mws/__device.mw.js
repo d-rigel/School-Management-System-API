@@ -9,7 +9,7 @@ module.exports = ({ meta, config, managers }) =>{
         agent = useragent.lookup(req.headers['user-agent']) || agent;
         const device = {
             ip, agent
-        }
+        }          
         next(device);
     }
 }
